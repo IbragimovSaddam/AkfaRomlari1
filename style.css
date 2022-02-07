@@ -1,0 +1,46 @@
+html {
+    height: 100%;
+}
+
+
+body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.akfaRomlari {
+    width: 600px;
+    height: 700px;
+    border: 15px ridge brown;
+    background-image: url('https://source.unsplash.com/500x600/?Messi');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.akfaRomlari:hover .chap-akfaRomlari {
+    transform:perspective(2000px) rotateY(-180deg);
+}
+
+.akfaRomlari:hover .ong-akfaRomlari {
+    transform: perspective(2000px) rotateY(180deg);
+}
+
+
+.deraza {
+    width: 100%;
+    background-color: rgba(12, 10, 10, 0.75);
+    transition: 4s;
+}
+
+.chap-akfaRomlari {
+    border: 15px ridge brown;
+    transform-origin: left;
+}
+
+.ong-akfaRomlari {
+    border: 15px ridge brown;
+    transform-origin: right;
+}
